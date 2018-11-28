@@ -9,7 +9,7 @@ beforeEach(() => {
 
 afterEach(() => {
   wrapped.unmount();
-  console.log("lol");
+  console.log("Testing final... LOL");
 });
 it("has a text area and a button", () => {
   expect(wrapped.find("textarea").length).toEqual(1);
