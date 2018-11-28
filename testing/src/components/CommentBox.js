@@ -3,10 +3,11 @@ import React, { Component } from "react";
 class CommentBox extends Component {
   state = { comment: "" };
   handleChange = e => {
+    e.preventDefault();
     this.setState({ comment: e.target.value });
   };
   handleSubmit = e => {
-    e.preventDefault();
+    // e.preventDefault();
 
     // TODO Call an action creator
     // And save the comment
