@@ -5,7 +5,7 @@ const initialState = {
   trouble: true,
   comment: ""
 };
-export default function(state = initialState, action) {
+export default function(state = [], action) {
   switch (action.type) {
     case SAVE_COMMENT:
       return Object.assign({}, state, {

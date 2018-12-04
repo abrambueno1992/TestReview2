@@ -10,6 +10,12 @@ const store = createStore(
   // applyMiddleware(...middleware)
   // other store enhancers if any
 );
-export default props => {
-  return <Provider store={store}>{props.children}</Provider>;
+export default ({ children, initialState = {} }) => {
+  return (
+    <Provider
+      store={createStore(store)}
+    >
+      {children}
+    </Provider>
+  );
 };
